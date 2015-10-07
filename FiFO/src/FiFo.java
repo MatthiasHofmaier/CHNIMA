@@ -37,7 +37,7 @@ public class FiFo {
 	}
 
 	@Override
-public Object clone(){
+	public Object clone(){
 		Object o=null;
 		try{
 		o=super.clone();
