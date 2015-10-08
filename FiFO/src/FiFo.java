@@ -26,27 +26,20 @@ public class FiFo {
 	
 	@Override
 	public boolean equals(Object o){
-		if(o!=null){
-		
 		if(o instanceof FiFo){
 			FiFo b=(FiFo)o;
 		 return(this.list.equals(b.list));
 		}
-		}
+		
 		return false;
 	}
 
 	@Override
-public Object clone(){
-		Object o=null;
-		try{
-		o=super.clone();
-		}
-		catch(CloneNotSupportedException e){
-			
-		}
-		return o;
-		}
+	public FiFo clone(){
+	FiFo fifo2=new FiFo(this.name);
+	fifo2.list=this.list;
+		return fifo2;
+	}
 	
 	
 
