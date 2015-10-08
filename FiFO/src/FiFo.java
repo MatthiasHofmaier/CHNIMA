@@ -44,7 +44,6 @@ public class FiFo {
 		return fifo2;
 	}
 	
-	
 
 	@Override
 	public String toString(){
