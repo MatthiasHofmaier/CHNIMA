@@ -26,9 +26,6 @@ public class FiFo {
 	
 	@Override
 	public boolean equals(Object o){
-		if(o==null){
-			return false;
-		}
 		if(o instanceof FiFo){
 			FiFo b=(FiFo)o;
 		 return(this.list.equals(b.list));
