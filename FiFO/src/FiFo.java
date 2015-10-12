@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class FiFo {
 	
-	ArrayList<Object> list;
-	String name;
+	private ArrayList<Object> list;
+	private String name;
 	
 	public FiFo(String name){
 		setName(name);
@@ -31,9 +31,8 @@ public class FiFo {
 		}
 		if(o instanceof FiFo){
 			FiFo b=(FiFo)o;
-		 return(this.list.equals(b.list));
+			return this.list.equals(b.list);
 		}
-		
 		return false;
 	}
 
